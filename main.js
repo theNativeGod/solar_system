@@ -12,22 +12,22 @@ const sphereGeometry = new THREE.SphereGeometry(1, 32, 32)
 //initialize textureLoader
 const textureLoader = new THREE.TextureLoader()
 const cubeTextureLoader = new THREE.CubeTextureLoader()
-cubeTextureLoader.setPath('static/textures/cubeMap/')
+cubeTextureLoader.setPath('./static/textures/cubeMap/')
 
 //loading textures
-const sunTexture = textureLoader.load('static/textures/2k_sun.jpg')
-const mercuryTexture = textureLoader.load('static/textures/2k_mercury.jpg')
-const venusTexture = textureLoader.load('static/textures/2k_venus_surface.jpg')
-const earthTexture = textureLoader.load('static/textures/2k_earth_daymap.jpg')
-const marsTexture = textureLoader.load('static/textures/2k_mars.jpg')
-const moonTexture = textureLoader.load('static/textures/2k_moon.jpg')
+const sunTexture = textureLoader.load('./static/textures/2k_sun.jpg')
+const mercuryTexture = textureLoader.load('./static/textures/2k_mercury.jpg')
+const venusTexture = textureLoader.load('./static/textures/2k_venus_surface.jpg')
+const earthTexture = textureLoader.load('./static/textures/2k_earth_daymap.jpg')
+const marsTexture = textureLoader.load('./static/textures/2k_mars.jpg')
+const moonTexture = textureLoader.load('./static/textures/2k_moon.jpg')
 const backgroundCubeMap = cubeTextureLoader.load([
-  'px.png',
-  'nx.png',
-  'py.png',
-  'ny.png',
-  'pz.png',
-  'nz.png',
+  '/px.png',
+  '/nx.png',
+  '/py.png',
+  '/ny.png',
+  '/pz.png',
+  '/nz.png',
 ])
 
 scene.background = backgroundCubeMap
