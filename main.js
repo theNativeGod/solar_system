@@ -1,5 +1,5 @@
 import './style.css';
-import * as THREE from '/three';
+import * as THREE from 'https://github.com/theNativeGod/solar_system/tree/d7837a2469af6408e53030e0b2bee9201b900830/node_modules/three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 
