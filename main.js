@@ -34,7 +34,8 @@ scene.background = backgroundCubeMap
 
 //initailize sun
 const sunMaterial = new THREE.MeshBasicMaterial({
-  map: sunTexture
+  map: sunTexture,
+
 })
 const sun = new THREE.Mesh(sphereGeometry, sunMaterial)
 
@@ -205,7 +206,7 @@ window.addEventListener('resize', () => {
 //renderloop
 
 const renderloop = () => {
-
+  sun.rotation.y += .01
   planetMeshes.forEach((planet, index) => {
     planet.rotation.y += 3 * planets[index].speed
     planet.position.x = Math.sin(planet.rotation.y) * planets[index].distance
